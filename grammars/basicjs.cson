@@ -1,0 +1,46 @@
+'scopeName': 'source.basicjs'
+'name': 'Basic.js'
+'fileTypes': ['bas']
+'patterns': [
+    {
+        'match': '\'+.*$'
+        'name': 'comment.line.basicjs'
+    },
+    {
+        'begin': '\"'
+        'end': '\"'
+        'name': 'string.quoted.double.basicjs'
+    },
+    {
+      'match': '(:|\\+|-|\\*|\/|%|=|<>|>|<|>=|<=)'
+      'name': 'keyword.operator.arithmetic.basicjs'
+    },
+    {
+      'match': '(and|or)'
+      'name': 'keyword.operator.logical.basicjs'
+    },
+    {
+      'match': '(while|wend|for|to|next|if|elseif|else|endif|return)'
+      'name': 'keyword.control.basicjs'
+    },
+    {
+      'match': '(print|suspendupdate|resumeupdate|update|sleep)'
+      'name': 'keyword.other.basicjs'
+    },
+    {
+      'match': '(function|endfunction)'
+      'name': 'storage.type.function.basicjs'
+    },
+    {
+      'match': '(true|false)'
+      'name': 'constant.language.basicjs'
+    },
+    {
+      'match': '[0-9]+\.?([0-9]+)?'
+      'name': 'constant.numeric.basicjs'
+    },
+    {
+      'match': '[a-zA-Z](\w+)?'
+      'name': 'entity.name.function.basicjs'
+    }
+]
